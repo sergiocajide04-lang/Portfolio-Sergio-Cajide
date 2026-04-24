@@ -1029,3 +1029,105 @@ strong { font-weight: 500; color: var(--text-primary); }
   color: var(--slate-light);
   margin-left: 4px;
 }
+.btn-cv {
+  background: var(--accent);
+  color: var(--navy);
+  border: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+}
+
+.btn-cv:hover {
+  background: var(--accent-dark);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(200, 169, 110, 0.3);
+}
+
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 700px) {
+
+  .mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    border-radius: 16px;
+    padding: 0.5rem;
+
+    background: rgba(248, 245, 239, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-md);
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-bottom-nav a {
+  flex: 0 0 auto;
+  text-align: center;
+  font-size: 0.72rem;
+  padding: 0.6rem 0.45rem;
+  color: var(--slate);
+  position: relative;
+  font-weight: 500;  
+
+}
+
+  .mobile-bottom-nav a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 16px;
+    background: var(--border-mid);
+  }
+
+.mobile-bottom-nav a.active {
+  font-weight: 700;  /* negrita real */
+  color: var(--navy);
+}
+
+.mobile-bottom-nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+  body {
+    padding-bottom: 90px;
+  }
+
+.hero-cta {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .hero-cta .btn {
+    display: flex;              /* 👈 clave */
+    align-items: center;        /* 👈 centra vertical */
+    justify-content: center;    /* 👈 centra horizontal */
+
+    padding: 0.55rem 0.7rem;
+    font-size: 0.78rem;
+    border-radius: 10px;
+
+    white-space: nowrap;
+  }
+}
