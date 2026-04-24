@@ -1030,8 +1030,8 @@ strong { font-weight: 500; color: var(--text-primary); }
   margin-left: 4px;
 }
 .btn-cv {
-  background: var(--accent);
-  color: var(--navy);
+  background: var(--accent) !important;;
+  color: var(--navy) !important;;
   border: none;
   font-weight: 600;
   display: inline-flex;
@@ -1074,12 +1074,12 @@ strong { font-weight: 500; color: var(--text-primary); }
 .mobile-bottom-nav a {
   flex: 0 0 auto;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   padding: 0.6rem 0.28rem;
   color: var(--slate);
   position: relative;
   font-weight: 600;
-  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
   .mobile-bottom-nav a:not(:last-child)::after {
@@ -1120,9 +1120,9 @@ strong { font-weight: 500; color: var(--text-primary); }
   }
 
   .hero-cta .btn {
-    display: flex;              /* 👈 clave */
-    align-items: center;        /* 👈 centra vertical */
-    justify-content: center;    /* 👈 centra horizontal */
+    display: flex;             
+    align-items: center;        
+    justify-content: center;   
 
     padding: 0.55rem 0.7rem;
     font-size: 0.78rem;
