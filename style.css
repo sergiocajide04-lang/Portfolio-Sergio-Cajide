@@ -69,7 +69,7 @@ strong { font-weight: 500; color: var(--text-primary); }
   background: rgba(248, 245, 239, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  
+ } 
 .nav-brand {
   font-family: 'DM Serif Display', serif;
   font-size: 1.4rem;
