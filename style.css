@@ -65,7 +65,7 @@ strong { font-weight: 500; color: var(--text-primary); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.1rem 2.5rem;
+  padding: 0.6rem 2.5rem;
   background: rgba(248, 245, 239, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -77,14 +77,12 @@ strong { font-weight: 500; color: var(--text-primary); }
   letter-spacing: 0.04em;
   display: flex;
   align-items: center;
-  height: 64px;
+  height: 70px;
 }
 
 .nav-brand img {
-  height: 64px;
-  max-height: 64px;
+  height: 75px; 
   width: auto;
-  display: block;
   object-fit: contain;
 }
 
