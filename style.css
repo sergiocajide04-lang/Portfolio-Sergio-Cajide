@@ -1074,8 +1074,8 @@ strong { font-weight: 500; color: var(--text-primary); }
 .mobile-bottom-nav a {
   flex: 0 0 auto;
   text-align: center;
-  font-size: 0.82rem;
-  padding: 0.6rem 0.32rem;
+  font-size: 0.8rem;
+  padding: 0.6rem 0.28rem;
   color: var(--slate);
   position: relative;
   font-weight: 600;
